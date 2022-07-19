@@ -18,7 +18,7 @@ function firstRecurringCharacter(input) {
           return input[i]
         } else{
             map[input[i]] = true
-        }
+        }      
         console.log(map)
     }
     return undefined

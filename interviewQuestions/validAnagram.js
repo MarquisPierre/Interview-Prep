@@ -19,6 +19,9 @@ var isAnagram = function(s, t) {
             tMap[t[i]] = 1
         }
     }
+
+
+    
       for (let k in sMap) {
         if (sMap[k] !== tMap[k]) {
             return false
