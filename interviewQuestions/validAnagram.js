@@ -7,13 +7,13 @@ var isAnagram = function(s, t) {
     let tMap = {}
 
     for(let i = 0; i < s.length; i++){
-        if (sMap.hasOwnProperty(s[i])) {
+        if (s[i] in sMap)
             sMap[s[i]]++
         } else{
             sMap[s[i]] = 1
         }
 
-        if (tMap.hasOwnProperty(t[i])) {
+        if (t[i] in tMap)
             tMap[t[i]]++
         } else{
             tMap[t[i]] = 1
